@@ -1,0 +1,112 @@
+.auth{
+    height:50%;  
+    width:40%; 
+    max-height:max-content;   
+}
+
+
+.auth .form{
+    height:100%; 
+    width:100%; 
+    background:white; 
+    border-radius:20px; 
+    transform-style:preserve-3d; 
+    transform:perspective(1000px);
+    transition:0.7s ease;  
+    box-shadow:-5px -5px 20px rgba(255,255,255,0.5), 
+                5px 5px 10px rgba(0,0,0,0.5); 
+}
+
+
+.login-form , .reg-form{
+    height:100%; 
+    width:100%; 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;   
+    align-items:center; 
+    gap:3em;    
+    letter-spacing:3px; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    backface-visibility: hidden; 
+    -webkit-backface-visibility:hidden; 
+}
+
+.reg-form{
+   /* gap:1.2em;  */
+}
+
+.reg-form{
+    transform:rotateY(180deg);  
+}
+
+
+.login-form input , .reg-form input{
+    font-size:20px; 
+    padding:15px 25px; 
+    outline:none; 
+    border:none; 
+    border-radius:10px; 
+    background:transparent; 
+    box-shadow:inset -2px -2px 20px rgba(255,255,255,0.7),
+                inset 2px 2px 10px rgba(0,0,0,0.3); 
+    text-align:center; 
+    width:50%;  
+    transition:0.5s ease; 
+}
+
+.login-form button , .reg-form button{
+    padding:10px 20px;  
+    outline:none; 
+    border:none; 
+    border-radius:5px; 
+    font-size:20px;
+    cursor:pointer;  
+}
+
+.google-signin{
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:center; 
+    gap:1.5rem; 
+}
+
+.google-signin button{
+    background:linear-gradient(to right,#f492f0,#a18dce); 
+    letter-spacing:2px; 
+    font-size:25px;  
+    font-weight:500; 
+}
+
+.option{
+    display:flex; 
+    flex-direction:column; 
+    text-align:center; 
+    gap:1.5em;  
+}
+
+.form button[type = "submit"]{
+    background: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    text-transform:uppercase; 
+    letter-spacing:2px; 
+    color:black;  
+     
+}
+
+.form button[type = 'button']{
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    text-transform:uppercase; 
+    letter-spacing:1.5px; 
+    color:black; 
+}
+
+.no-match{
+    padding:5px 10px; 
+    background:rgba(255,0,0,0.5); 
+    border-radius:5px;
+    border:2px solid red;  
+}

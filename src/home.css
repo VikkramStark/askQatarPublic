@@ -1,0 +1,157 @@
+.home{
+    height:100%; 
+    max-width:100%; 
+    width:100%;   
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:space-between; 
+    gap:2em; 
+    padding-top:50px; 
+}
+
+.home .title{
+    width:80%;  
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+}
+
+.home .title p{ 
+    font-family:"Caveat"; 
+    font-size:60px;   
+    color:whitesmoke; 
+    letter-spacing:2px; 
+    text-shadow:0px 0px 20px rgba(255,255,255,0.7); 
+    position:relative; 
+    font-weight:1000; 
+    cursor:pointer; 
+}
+
+.home-question-container{
+    width:100%; 
+    display:flex; 
+    align-items:space-around;  
+    justify-content:center;
+    height:80%; 
+    max-height:max-content;   
+    max-height:auto;
+    margin-top:3rem;   
+    gap:5rem;   
+    padding:20px 40px;  
+    flex-wrap:wrap; 
+      
+}
+
+.loading{
+    font-size:50px; 
+    letter-spacing:2px; 
+    font-style:"Pacifico";  
+    color:white;  
+}
+
+.input-query{
+    margin-top:2rem; 
+    width:75%; 
+    display:flex; 
+    justify-content:flex-end; 
+    padding:0 20px; 
+}
+
+.input-query input{
+    text-align:center; 
+    outline:none; 
+    border:none; 
+    padding:10px 20px; 
+    font-size:22px; 
+    border-radius:20px; 
+    width:35%;  
+    box-shadow:-2px -2px 10px rgba(255,255,255,.7), 
+                2px 2px 10px rgba(0,0,0,.5); 
+}
+
+.search-indicator{
+    width:80%; 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:flex-start; 
+}
+
+.search-indicator p{
+    font-size:20px; 
+    color:white; 
+    text-shadow:2px 2px 10px rgba(0,0,0,0.5);  
+    font-family:"Lato"; 
+}
+
+.home-question-card{
+    padding:10px 30px;   
+    display:flex; 
+    flex-direction:column; 
+    gap:2rem; 
+    justify-content:center; 
+    height:max-content; 
+    align-items:center; 
+    background:white; 
+    border-radius:10px; 
+    box-shadow: -5px -5px 20px rgba(255,255,255,.7), 
+                    5px 5px 20px rgba(0,0,0,.5);
+    transition:0.4s ease; 
+    max-width:50rem; 
+    text-align:center; 
+    margin-bottom:10px; 
+}
+
+.home-question-card:hover{
+    transform:scale(1.05);  
+}
+
+.home-question-card .home-question-text{
+    font-size:25px; 
+    letter-spacing:1px; 
+    font-family:"Quicksand"; 
+    white-space:break-spaces; 
+    padding:15px 25px;   
+}
+
+.home-question-card .asker-name{
+    display:flex; 
+    width:100%; 
+    justify-content:flex-end; 
+    align-items:center;  
+}
+
+.asker-name p{
+    font-size:20px; 
+    font-family:"Nunito"; 
+}
+
+.no-results , .no-results div{
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:flex-start;  
+    gap:3em; 
+}
+
+.no-results p{
+    color:white; 
+    font-size:25px; 
+    letter-spacing:1px; 
+    font-family:"Itim"; 
+}
+
+
+.no-results a{
+    text-decoration:none; 
+    padding:10px 20px; 
+    font-style:"Itim";
+    font-size:25px; 
+    cursor: pointer;
+    border-radius:10px;
+    font-weight:500;  
+    background:linear-gradient(to right,#f89999,#f6c0ba);  
+}
+
+
+

@@ -1,0 +1,75 @@
+.about-us{
+    height:100%; 
+    width:100%; 
+    display:flex; 
+    align-items:center; 
+    justify-content: flex-start;  
+    flex-direction:column;  
+    gap:4rem; 
+}
+
+.about-us .user-header{
+    font-family:"Permanent Marker"; 
+    font-size:40px; 
+    letter-spacing:2px; 
+    word-spacing: 20px; 
+    width:80%; 
+    display:flex; 
+    justify-content: flex-start; 
+    align-items:center; 
+    margin-top:6rem; 
+}
+
+.about-content{
+    padding:20px 50px; 
+    border-radius:20px; 
+    box-shadow:-5px -5px 20px rgba(255,255,255,.7), 
+                5px 5px 20px rgba(0,0,0,0.5); 
+    font-size:30px; 
+    font-family:"Ubuntu";  
+    background:whitesmoke;  
+    max-width:50%; 
+    white-space:break-spaces;
+    text-align:center; 
+}
+
+i{  
+    color:transparent; 
+    -webkit-background-clip: text; 
+    background-clip:text; 
+    font-style:normal; 
+}
+
+.rainbow{
+    background:linear-gradient(to right, #ec008c, #fc6767);
+    color:transparent; 
+    -webkit-background-clip: text; 
+    background-clip:text; 
+    font-style:normal;
+}
+
+.react-blue{
+    background: linear-gradient(to right, #3ddbf7, #65c7f7, #0052d4);
+    color:transparent; 
+    -webkit-background-clip: text; 
+    background-clip:text; 
+    font-style:normal;
+}
+
+.fire{
+    background: linear-gradient(to right, #F37335, #FDC830);
+    color:transparent; 
+    -webkit-background-clip: text; 
+    background-clip:text; 
+    font-style:normal;
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.red{
+    
+    background: linear-gradient(to right, #473838, #e71d1d);
+    color:transparent; 
+    -webkit-background-clip: text; 
+    background-clip:text; 
+    font-style:normal;
+}

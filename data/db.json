@@ -1,0 +1,45 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "text":"Do we have to wear Mask ?",
+            "user_id":"abcd",
+            "unanswered":false, 
+            "keywords":["corona","mask","lockdown"],  
+            "answers":[
+                {
+                    "user_id":"jhga", 
+                    "answer":"Yes, Due to Precautions"
+                },
+                {
+                    "user_id":"udca", 
+                    "answer":"Not so strict, you can carry one if you wanted to"
+                }
+            ]
+        }, 
+
+        {
+            "id":2,
+            "text":"is Partying Allowed?", 
+            "user_id":"gwqg", 
+            "unanswered":true, 
+            "keywords":["party","drinks"],  
+            "answers":[]
+        }
+    ], 
+
+    "users":[
+        {
+            "user_id":"abcd",
+            "user_name":"Someone"
+        },
+        {
+            "user_id":"jhga", 
+            "user_name":"otherOne"
+        }, 
+        {
+            "user_id":"gwqg", 
+            "user_name":"Akbar"
+        }
+    ]
+}

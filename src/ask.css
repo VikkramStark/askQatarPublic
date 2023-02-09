@@ -1,0 +1,120 @@
+.ask{
+    height:100%; 
+    width:100%; 
+    display:flex;
+    flex-direction:column;   
+    align-items:center; 
+    gap:5em; 
+    padding-top:50px; 
+}
+
+.ask .header{
+    width:80%; 
+}
+
+.ask .header h3{
+    font-family:Nunito; 
+    font-size:30px; 
+    letter-spacing:5px; 
+    font-weight:1000;  
+    color:white; 
+}
+
+.query{
+    display:flex; 
+    align-items:center; 
+    justify-content:space-around;  
+    width:65%;     
+    flex-direction:row;  
+}
+
+.question-field{
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center; 
+    gap:2em; 
+}
+
+.question-field p{ 
+    width:80%; 
+    font-family:"Pacifico",cursive; 
+    font-size: 25px; 
+    color:white; 
+    text-shadow:0px 0px 20px rgba(255,255,255,.5); 
+    letter-spacing:1px; 
+}
+
+.keywords-field{ 
+    width:40%; 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center; 
+    align-items:center; 
+    gap:2em; 
+}
+
+.keywords-field p{
+    font-family:Quicksand; 
+    font-weight:1000;  
+    color:white; 
+    letter-spacing:2px; 
+    font-size:25px; 
+    text-shadow:0px 0px 20px rgba(255,255,255,0.7); 
+}
+
+.keywords-field input{
+    outline:none; 
+    border:none; 
+    font-size:25px; 
+    padding:10px 20px; 
+    border-radius:25px;
+    width:80%;  
+    box-shadow:-2px -2px 10px rgba(255,255,255,0.7),
+                2px 2px 10px rgba(0,0,0,0.5);
+    text-align:center; 
+
+}
+
+
+textarea{
+    resize:none; 
+    width:650px; 
+    height:350px; 
+    outline:none; 
+    border:none; 
+    border-radius:20px; 
+    padding:20px 30px;
+    text-align:center; 
+    font-size:30px; 
+    font-family:cursive; 
+    letter-spacing:2px;  
+    box-shadow:-5px -5px 20px rgba(255,255,255,0.5), 
+                5px 5px 20px rgba(0,0,0,0.5); 
+}
+
+.post-div{
+    display:flex; 
+    justify-content:flex-end; 
+    align-items:center;
+    margin-top:1em;  
+    width:95%; 
+}
+
+.post-div button{
+    outline:none; 
+    padding:5px 15px; 
+    font-size:23px; 
+    border-radius:5px; 
+    border:none;  
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /*background: linear-gradient(to right, #ed213a, #93291e); */
+    color:white; 
+    cursor:pointer; 
+    transition:0.3s ease; 
+    box-shadow:0px 2px 10px rgba(0,0,0,0.5); 
+}
+
+.post-div button:hover{ 
+    transform:translateY(-10px); 
+    box-shadow:0 5px 20px rgba(0,0,0,0.5);  
+}

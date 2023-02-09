@@ -1,0 +1,159 @@
+.page-not-found{
+    height:100%;
+    width:100%; 
+    display:flex; 
+    flex-direction:row; 
+    gap:5%; 
+}
+
+.left , .middle , .right{
+    display:flex; 
+    flex-direction:column;  
+    width:30%; 
+    height:100%; 
+}
+
+.middle{
+    justify-content:flex-start; 
+    padding-top:3rem;   
+    align-items:center; 
+    gap:3rem; 
+    white-space:break-spaces;  
+    text-align:center; 
+}
+
+.middle h1{
+    font-size:15rem; 
+    font-weight:1000; 
+    font-family:"Permanent Marker";  
+}
+
+.middle h2{
+    font-family:"Poppins"; 
+    font-size:35px; 
+    color:white; 
+    letter-spacing:2px; 
+    text-shadow:0px 0px 20px rgba(255,255,255,.7); 
+}
+
+.middle a{
+    padding:15px 20px; 
+    font-size:25px; 
+    font-family:"Lato"; 
+    color:black; 
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    border-radius:15px; 
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5); 
+    transition:0.3s ease; 
+}
+
+.middle a:hover{
+    animation:pressButton 0.5s ease; 
+}
+
+.left{
+    position:relative; 
+}
+
+.right{
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:center; 
+}
+.upper-container , .lower-container{ 
+    height:50%; 
+    width:100%; 
+    position:relative; 
+}
+
+.element1{
+    height:100px;  
+    width:100px; 
+    border:5px solid rgb(250, 183, 59);  
+    border-radius:50%; 
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+    box-shadow:2px 2px 10px rgba(0,0,0,0.7), 
+                inset 2px 2px 10px rgba(0,0,0,0.7);  
+    animation:diagonalAnimation 2s ease-in-out infinite reverse;  
+    transition:0.3s ; 
+    transition-delay:0.3s; 
+}
+
+.element2{
+    height:100px;  
+    width:100px; 
+    border:5px solid rgb(248, 30, 30);   
+    border-radius:50%; 
+    position:absolute; 
+    bottom:10%;  
+    left:50%; 
+    transform:translateX(-50%);  
+    box-shadow:2px 2px 10px rgba(255,255,255,0.7), 
+                inset 2px 2px 10px rgba(255,255,255,0.7); 
+    animation:verticalMove 3s ease-in-out infinite;  
+}
+
+.spin-box{
+    height:150px;  
+    width:150px; 
+    border-radius:10px; 
+    border:10px solid purple; 
+    position:absolute; 
+    left:50%; 
+    top:50%; 
+    transform:translate(-50%,-50%); 
+    transition:0.5s ease; 
+    transform:rotateZ(45deg); 
+    animation:rotateAnimation 3s linear infinite; 
+}
+
+@keyframes rotateAnimation{
+    0%,100%{
+        transform:rotateZ(45deg) translateY(0px); 
+    }
+
+    25%{
+        transform:translateY(-150px) rotate(270deg);  
+    }
+
+    50%{
+        transform:translateY(-300px) rotateZ(500deg);   
+    }
+}
+
+@keyframes verticalMove{
+    0%,100%{
+        transform:translateY(0px); 
+    }
+    50%{
+        transform:translateY(-300px);  
+    }
+}
+
+@keyframes diagonalAnimation{
+    0%,100%{
+        transform:translate(0px , 0px);  
+    }
+
+    25%{
+        transform:translate(100px, -300px);   
+    }
+
+    75%{
+        transform:translate(200px,-150px);  
+    }
+}
+
+@keyframes pressButton{
+    0%,100%{
+        transform:translateY(0px);  
+        box-shadow:5px 5px 10px rgba(0,0,0,0.5); 
+    }
+    50%{
+        transform:translateY(5px);   
+        box-shadow:0px 0px 5px rgba(0,0,0,0.5); 
+    }
+}
